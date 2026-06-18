@@ -4,11 +4,11 @@ Builds a search engine for HTML documents. It extracts and cleans text, lemmatiz
 
 
 
-Overview
+**Overview**
 
 This project implements a search engine over a collection of HTML documents for books, where certain features are tailored specifically to help with finding relevant books. The system has an inverted index and utilises a TF-IDF model.
 
-Features
+**Features**
 
 Document Processing Parses HTML documents using BeautifulSoup Tracks the document zone by HTML tag Removes stop words Lemmatises tokens Tracks frequency of terms
 
@@ -18,7 +18,7 @@ Ranking Algorithm Has both weighted/normalised tf and idf. Implements vector cal
 
 Query Processing Tokenises and lemmatises user queries Detects bigrams Query expansion (thesaurus-based) using WordNet
 
-Dependencies
+**Dependencies**
 
 bash pip install beautifulsoup4 nltk regex spacy sumy python -m spacy download
 
@@ -30,7 +30,7 @@ project/ | |--- Book/ | | | |--- 0001049305.html | |--- 0001049313.html | |--- .
 
 update the paths below to your directory for Book file basePath = Path("Your directory up to and including Book") folderOfBooks = "Your directory up to and including Book"
 
-Example Outputs
+**Example Outputs**
 
 file://Book/0002201097.html Birds of North America (Collins Pocket Guide): Jack Griggs: 9780002201094: Amazon.com: BooksBirds of...
 
